@@ -1,87 +1,87 @@
-# English (en)
+# 简体中文 (zh-cs)
 
 print_already_running() {
-  echo "(i) accd is already running"
+  echo "(i) acc守护进程已在运行中"
 }
 
 print_started() {
-  echo "(i) accd started"
+  echo "(i) acc守护进程已启动"
 }
 
 print_stopped() {
-  echo "(i) accd stopped"
+  echo "(i) acc守护进程已停止"
 }
 
 print_not_running() {
-  echo "(i) accd is not running"
+  echo "(i) acc守护进程没有运行"
 }
 
 print_restarted() {
-  echo "(i) accd restarted"
+  echo "(i) acc守护进程已重启"
 }
 
 print_is_running() {
-  echo "(i) accd $1 is running $2"
+  echo "(i) acc守护进程 $1 正在运行 $2"
 }
 
 print_config_reset() {
-  echo "(i) Config reset"
+  echo "(i) 配置重置"
 }
 
 print_known_switches() {
-  echo "(i) Known charging switches"
+  echo "(i) 已知充电开关"
 }
 
 print_switch_fails() {
-  echo "(!) [${chargingSwitch[@]}] won't work"
+  echo "(!) [${chargingSwitch[@]}] 不起作用"
 }
 
 print_invalid_switch() {
-  echo "(!) Invalid charging switch, [${chargingSwitch[@]}]"
+  echo "(!) 无效的充电开关 [${chargingSwitch[@]}]"
 }
 
 print_charging_disabled_until() {
-  echo "(i) Charging disabled until battery capacity <= $1"
+  echo "(i) 已禁止充电，直到电量水平 <= $1"
 }
 
 print_charging_disabled_for() {
-  echo "(i) Charging disabled for $1"
+  echo "(i) 禁止充电 $1"
 }
 
 print_charging_disabled() {
-  echo "(i) Charging disabled"
+  echo "(i) 已禁止充电"
 }
 
 print_charging_enabled_until() {
-  echo "(i) Charging enabled until battery capacity >= $1"
+  echo "(i) 已允许充电，直到电量水平 >= $1"
 }
 
 print_charging_enabled_for() {
-  echo "(i) Charging enabled for $1"
+  echo "(i) 充电 $1"
 }
 
 print_charging_enabled() {
-  echo "(i) Charging enabled"
+  echo "(i) 已允许充电"
 }
 
 print_unplugged() {
-  echo "(!) Battery must be charging to continue..."
+  echo "(!) 电池必须处于充电中才能继续……"
 }
 
 print_switch_works() {
-  echo "(i) [$@] works"
+  echo "(i) [$@] 有效"
 }
 
 print_switch_fails() {
-  echo "(!) [$@] won't work"
+  echo "(!) [$@] 不起作用"
 }
 
 print_no_ctrl_file() {
-  echo "(!) No control file found"
+  echo "(!) 未找到任何控制文件"
 }
 
 print_not_found() {
-  echo "(!) $1 not found"
+  echo "(!) 未找到 $1"
 }
 
 
@@ -296,24 +296,24 @@ EOF
 
 
 print_exit() {
-  echo "Exit"
+  echo "退出"
 }
 
 print_choice_prompt() {
-  echo "(?) Choice, [enter]: "
+  echo "(?) 选择并输入: "
 }
 
 print_auto() {
-  echo "Automatic"
+  echo "自动"
 }
 
 print_default() {
- echo "Default"
+ echo "默认"
 }
 
 print_quit() {
   echo "(i) Press $1 to abort/quit"
-  [ -z "${2-}" ] || echo "- Or $2 to save and quit"
+  [ -z "${2-}" ] || echo "- 或 $2 以保存并退出"
 }
 
 print_curr_restored() {
