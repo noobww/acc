@@ -1,3 +1,4 @@
+#简体中文(chs)
 print_already_running() {
   echo "(i) accd is already running"
 }
